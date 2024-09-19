@@ -16,5 +16,5 @@ class Student:
         print(f"Roll number: {self.__roll_number}")
         print(f"Grade: {self.__grades}")
 
-New_Student = Student("Mukuch", 45, 4)
+New_Student = Student("Poxosa", 45, 4)
 New_Student.Student_Info()
