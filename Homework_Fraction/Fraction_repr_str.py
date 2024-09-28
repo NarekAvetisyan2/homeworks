@@ -113,12 +113,13 @@ class Fraction:
         if self.denominator < 0:
             self.denominator = -self.denominator
 
-    # def __iadd__(self, other):
-    #     if not isinstance(other, Fraction):
-    #         raise NotImplemented("....")
-    #     numerator_iadd = self.numerator
-    #     denominator_iadd = self.denominator
-    #     return self.numerator += self.denominator
+    def __iadd__(self, other):
+        if not isinstance(other, Fraction):
+            raise NotImplemented("....")
+        # numerator_iadd = self.numerator
+        self.numerator = self.numerator + other.numerator
+        self.denominator = self.denominator + other.denominator
+        return self
 
 
 if __name__ == "__main__":
@@ -140,8 +141,10 @@ if __name__ == "__main__":
     # print(fraction1 >= fraction2)
     # print(hash(fraction1))
     # print(hash(fraction2))
-    # print(hash(fraction1 == fraction2)) # Nuyn@ chi berum
+    # print(hash(fraction1 == fraction2))
     # print(float(fraction1 / fraction2)) # stexel tarberutyun chi talis tranc divisioni het
-    # print(fraction1 += fraction2) # syntax errora talis
+    fraction1 + fraction2
+
+
 
 
