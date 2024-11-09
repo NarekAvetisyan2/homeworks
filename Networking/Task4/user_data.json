@@ -1,0 +1,35 @@
+{
+  "company": "TechCorp",
+  "departments": [
+    {
+      "name_dep": "Engineering",
+      "employees": [
+        {
+          "age": 18,
+          "name": "Alice",
+          "role": "Engineer"
+        },
+        {
+          "age": 25,
+          "name": "Bob",
+          "role": "Manager"
+        }
+      ]
+    },
+    {
+      "name_dep": "Sales",
+      "employees": [
+        {
+          "age": 25,
+          "name": "Charlie",
+          "role": "Sales Rep"
+        },
+        {
+          "age": 92,
+          "name": "Dana",
+          "role": "Manager"
+        }
+      ]
+    }
+  ]
+}

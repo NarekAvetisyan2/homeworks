@@ -1,0 +1,6 @@
+logging:
+  file: app.log
+  level: INFO
+server:
+  host: localhost
+  port: 9
