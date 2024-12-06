@@ -1,0 +1,10 @@
+{
+  "Alla": {
+    "username": "Alla",
+    "password": "$5$rounds=535000$QEVyVbV8yVCPW/7s$CT/BqX.dvhCoIywQk2CD4pE/JTYM2inqXUQ6ODxgN69"
+  },
+  "Bob": {
+    "username": "Bob",
+    "password": "$5$rounds=535000$GybKfis7XZ6s6vOn$0SKdE07sceV.KpR.OBTwnixht8d/q0vi3m1xx06eYf9"
+  }
+}
