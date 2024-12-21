@@ -1,20 +1,16 @@
 import os
-import json
 import uvicorn
 from dotenv import load_dotenv
-from jose import JWTError
-from models.schemas import User, Rental
 from passlib.context import CryptContext
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI
 from fastapi.security import OAuth2PasswordBearer
-from utils.auth_utils import create_jwt_token, verify_jwt_token
 
 pwd_context = CryptContext(schemes='sha256_crypt')
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="j_token")
 PORT = int(os.getenv("PORT"))
-movie_file = "movies.json"
-user_file = "users.json"
-rental_file = "rentals.json"
+MOVIE_FILE = "movies.json"
+USER_FILE = "users.json"
+RENTAL_FILE = "rentals.json"
 
 load_dotenv()
 app = FastAPI()

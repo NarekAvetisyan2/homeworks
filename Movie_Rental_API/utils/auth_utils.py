@@ -1,8 +1,9 @@
 import os
-import jwt
-from jose import JWTError
-from dotenv import load_dotenv
 from datetime import timedelta, datetime
+import jwt
+from dotenv import load_dotenv
+from jose import JWTError
+
 
 load_dotenv()
 
@@ -26,6 +27,6 @@ def verify_jwt_token(j_token):
         user = jwt.decode(j_token, SECRET_KEYS, ALGORITHM)
         return user
     except JWTError:
-        print("Token was expired")
-    except Exception as e:
-        print("Verification error")
+        raise TypeError("Verification error")
+    except jwt.ExpiredSignatureError:
+        raise ValueError("Token was expired")
